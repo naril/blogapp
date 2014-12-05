@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="blogApp">
+<head>
+	<title>blog app</title> 
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	  <meta charset='UTF-8'>
+  
+<!-- js section -->
+	<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+
+
+<!-- css section -->
+	<link rel="stylesheet" type="text/css" href="css/shadow.css"> 
+	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	
+<!-- fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+<!-- polymer section -->
+	<link rel="import" href="bower_components/polymer-ipsum/dist/polymer-ipsum.html">
+	<link rel="import" href="bower_components/core-menu/core-menu.html">
+	<link rel="import" href="bower_components/paper-shadow/paper-shadow.html">
+	<link rel="import" href="bower_components/paper-item/paper-item.html">
+	<link rel="import" href="bower_components/core-icon/core-icon.html">
+	<link rel="import" href="bower_components/paper-input/paper-input.html">
+	<link rel="import" href="bower_components/paper-input/paper-autogrow-textarea.html">
+	<link rel="import" href="bower_components/paper-button/paper-button.html">
+
+</head>
+
+<body ng-app="blogApp">
+  	<div class="container">
+  		<div class="row"><div class="col-xs-12"><img src="img/fr3a.jpg" class="brand"></div></div>
+		<div class="row">
+  			<div class="col-xs-3 sidebar-outer" id="leftCol">
+  				<div class="sidebar">
+	  				<paper-shadow z="2">
+		              	<a ng-href="#/blog"><paper-item >Blog</paper-item></a>
+						<a ng-href="#/about"><paper-item >O me</paper-item></a>
+						<a ng-href="#/contact"><paper-item >Kontakt</paper-item></a>
+					</paper-shadow>
+					<br>	
+						<core-icon class="big icon-shadow" src="img/twitter.png"></core-icon>
+						<core-icon class="big icon-shadow" src="img/fb.png"></core-icon>
+						<core-icon class="big icon-shadow" src="img/instagram.png"></core-icon>
+				</div>
+      		</div>  
+			
+			<div class="col-xs-9">
+				<div ng-view class="slide"></div>	
+      		</div>
+
+      	</div> 
+      	<div class="row"><div class="col-xs-12">Vyvořeno 2014</div></div>
+  	</div>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-route/angular-route.min.js"></script>
+	<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+	<script src="bower_components/angular-resource/angular-resource.js"></script>
+	<script src="js/controllers.js"></script>
+</body>
+</html>

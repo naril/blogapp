@@ -1,0 +1,30 @@
+{
+  "name": "polymer-ipsum",
+  "version": "0.0.4",
+  "description": "Web Component Lorem ipsum using Polymer",
+  "license": "MIT",
+  "main": "dist/polymer-ipsum.html",
+  "keywords": [
+    "polymer",
+    "web-components"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.3.3"
+  },
+  "homepage": "https://github.com/jordifebrer/polymer-ipsum",
+  "_release": "0.0.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.4",
+    "commit": "4600421725b3a096070f8c0d9ab70250105dae28"
+  },
+  "_source": "git://github.com/jordifebrer/polymer-ipsum.git",
+  "_target": "~0.0.4",
+  "_originalSource": "polymer-ipsum",
+  "_direct": true
+}

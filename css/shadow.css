@@ -1,0 +1,106 @@
+paper-shadow {
+	margin-bottom: 20px;
+}
+
+.obsah {
+	padding-left: 5px;
+}
+
+paper-shadow {
+	background-color: white;
+ 
+}
+
+.fixed-m {
+        position: fixed;
+}
+.scrollit {
+        float: left;
+        width: 71%
+}
+
+.sidebar-outer {
+    position: relative;
+}
+
+.sidebar {
+    position: fixed;
+}
+
+.brand
+{
+  background: no-repeat left center;
+  width: 100%;
+}
+
+body  {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+/* ANIMATIONS
+============================================================================= */
+.slide{
+  left:0;
+}
+.slide.ng-enter{
+  transition:0.40s linear all;
+  position:fixed;
+  z-index:inherit;
+  left:-100%;
+  height:inherit;
+}
+.slide.ng-leave{
+  transition:0.40s linear all;
+  position:fixed;
+  z-index:9999;
+  right:0;
+}
+.slide.ng-leave-active{
+  transition:0.40s linear all;
+  position:fixed;
+  right:-100%;
+  left:100%;
+}
+.slide.ng-enter-active{
+  transition:0.40s linear all;
+  left:0;
+  position:relative;
+}
+
+.big {
+    height: 32px;
+    width: 32px;
+  }
+
+.icon-shadow {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-transition: -webkit-box-shadow 0.5s ease-out, opacity 0.5s ease-out;
+    -moz-transition: -moz-box-shadow 0.5s ease-out, opacity 0.5s ease-out;
+    transition: box-shadow 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.icon-shadow:hover {
+    -webkit-box-shadow: 2px 12px 10px rgba(0,0,0,0.3);
+    -moz-box-shadow: 2px 12px 10px  rgba(0,0,0,0.3);
+    box-shadow: 2px 12px 10px rgba(0,0,0,0.3);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.comment-box {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+textarea {
+  border-style: solid;
+}
+
+paper-button {
+  background: lightgrey;
+}
