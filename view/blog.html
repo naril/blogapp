@@ -1,6 +1,9 @@
-<div ng-repeat="item in getNumber(10)">		
+<div ng-repeat="clanek in clanky">		
 	<paper-shadow z="2" class="obsah">
-		<a ng-href="#/article/{{item}}"><h1>Nadpis - proklik na clanek</h1></a>
-		<polymer-ipsum paragraphs=1></polymer-ipsum>
+		<h1>{{clanek.uvod}}</h1>
+		{{clanek.time_stamp}}<br><br>
+		<p>{{preview(clanek.id)}}</p><br>
+
+		<a ng-href="#/article/{{clanek.id}}">více...</a>
 	</paper-shadow>
 </div>

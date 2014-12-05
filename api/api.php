@@ -84,7 +84,7 @@ $app->get('/section/:name', function ($name) use($app) {
 
 $app->post('/clanky/clanek/:id/komentare/add', function ($id) use($app) {
     //pridava komentar ke clanku
-    $data = json_decode($app->request->getBody(), true);
+    $data = $app->request->getBody();
     $querry = "INSERT INTO komentare(`id_clanku`,`jmeno`,`text`) VALUES('". $id . "','". $data["jmeno"] ."','". $data["text"] ."')";
     $data = mysqli_query($app->db,$querry);
 });
