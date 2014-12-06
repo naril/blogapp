@@ -98,9 +98,30 @@ body  {
 }
 
 textarea {
-  border-style: solid;
+  border-style: solid; 
 }
 
 paper-button {
   background: lightgrey;
 }
+
+
+.sticky {  
+    position: fixed;  
+   left: 0;  
+    top: 0;  
+    z-index: 100;  
+    border-top: 0;  
+} 
+
+#con .well {
+    height:400px;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+
