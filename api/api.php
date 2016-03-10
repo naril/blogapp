@@ -2,10 +2,10 @@
 
 require 'vendor/autoload.php';
 
-define("SERVER_NAME","wm76.wedos.net");
-define("USER_NAME","w84394_7528bec");
-define("PASSWORD","pxbh5bH8");
-define("MY_DB","d84394_7528bec");
+define("SERVER_NAME","");
+define("USER_NAME","");
+define("PASSWORD","");
+define("MY_DB","");
 
 $app = new \Slim\Slim();
 
